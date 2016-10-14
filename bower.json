@@ -1,0 +1,17 @@
+{
+  "name": "akula-oauth",
+  "homepage": "https://github.com/rdemorais/akula-oauth",
+  "authors": [
+    "Rafael de Morais <rdemorais.freitas@gmail.com>"
+  ],
+  "description": "",
+  "main": "akula-oauth-ng.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
