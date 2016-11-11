@@ -253,11 +253,6 @@ function oauthInterceptor($q, $rootScope, OAuthToken, oAuthConfig) {
                 $rootScope.$emit('oauth:error', rejection);
             }
 
-            if(-1 === rejection.status) {
-                OAuthToken.removeToken();
-                $rootScope.$emit('oauth:error', rejection);
-            }
-
             // Catch invalid_token and unauthorized errors.
             // The token isn't removed here so it can be refreshed when the invalid_token error occurs.
             if (401 === rejection.status &&
